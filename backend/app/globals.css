@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f8ff;
+  --foreground: #151631;
+  --brand-primary: #1e3a8a;
+  --brand-ink: #151631;
+  --brand-muted: #667085;
+  --brand-line: #dce1ef;
+  --brand-soft: #f7f9ff;
+  --auth-panel-start: #1d3f90;
+  --auth-panel-end: #0e1f4d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-muted: var(--brand-muted);
+  --color-brand-line: var(--brand-line);
+  --color-brand-soft: var(--brand-soft);
+  --color-auth-panel-start: var(--auth-panel-start);
+  --color-auth-panel-end: var(--auth-panel-end);
+  --font-sans: var(--font-manrope);
+  --font-heading: var(--font-space-grotesk);
+  --shadow-auth-panel: 0 28px 60px rgba(17, 24, 56, 0.35);
+  --shadow-auth-card: 0 22px 48px rgba(28, 38, 80, 0.18);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.auth-background {
+  background:
+    radial-gradient(circle at 16% 8%, rgba(123, 162, 255, 0.3) 0, transparent 36%),
+    radial-gradient(circle at 88% 90%, rgba(35, 102, 255, 0.18) 0, transparent 30%),
+    linear-gradient(180deg, #f7f9ff 0%, #eef2ff 100%);
+}
+
+.bg-auth-panel {
+  background: linear-gradient(160deg, var(--auth-panel-start) 0%, var(--auth-panel-end) 100%);
+}
+
+@media (max-width: 1023px) {
+  .bg-auth-panel {
+    min-height: 16rem;
+  }
+}
