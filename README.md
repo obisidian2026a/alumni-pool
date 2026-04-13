@@ -4,8 +4,8 @@
 Alumni Pool is a full-stack inventory and order management platform with a Next.js frontend and a NestJS backend API.
 
 ## Live project link
-Frontend: https://your-frontend-live-link-here
-Backend API: https://your-backend-live-link-here
+Frontend: [https://invenmt.vercel.app](https://invenmt.vercel.app)
+Backend API: [hhttps://invenmt.up.railway.app/docs](https://invenmt.up.railway.app/docs)
 
 ## Technologies used
 - Next.js
